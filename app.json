@@ -1,0 +1,163 @@
+{
+    "name": "Stella",
+    "description": "Stella project - Makes it easy and fun to use Whatsapp..",
+    "logo": "https://raw.githubusercontent.com/riz4d/stella/rizad/media/gif/stellaherokujpg",
+    "keywords": ["whatsapp", "userbot", "DrkBox", "Asena", "WhatsAsena", "bot", "api", "ai"],
+    "repository": "https://github.com/riz4d/stella",
+    "website":   "https://rizad.ml",
+    "success_url": "https://t.me/riz4d",
+    "stack": "container",
+    "env": {
+        "STELLA_STRING": {
+            "description": "Put here the string you got from whatsapp or from replit.",
+            "required": true
+        },
+        "SUDO": {
+            "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 1205xxxxxxxxx (USA number +1)",
+            "required": false
+        },
+        "LANGUAGE": {
+            "description": "Bot language.  Español => ES, English => en",
+            "required": true,
+            "value": "EN"
+        },
+        "ANTİ_LİNK": {
+            "description": "Link Blocking System.",
+            "required": true,
+            "value": "false"
+        },
+        "AUTO_BİO": {
+            "description": "Set true to add automatic date and time to the state. Set true for auto date, time in biography.",
+            "required": true,
+            "value": "false"
+        },
+        "HANDLERS": {
+            "description": "Prefix to activate the commands.",
+            "required": true,
+            "value": "^[.!;]"
+        },
+        "FULL_EVA": {
+            "description": "Turn your account into a chatbot!",
+            "required": true,
+            "value": "false"
+        },
+        "NO_LOG": {
+            "description": "Set true if you don't want to see error log.",
+            "required": true,
+            "value": "false"
+        },
+        "SEND_READ": {
+            "description": "message read part, set true or false if you want the message to be read or not.",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU": {
+            "description": "If HEROKU is running, set true.",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU_API_KEY": {
+            "description": "Heroku API Key.",
+            "required": true
+        },
+        "MUTE_MESSAGE": {
+            "description": "Customizable MUTE message! Use: default to change later.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_CHAT": {
+            "description": "Eg: 1385xxxxxxx,1268xxxxxxx.",
+            "required": false,
+            "value": "false"
+        },
+        "UNMUTE_MESSAGE": {
+            "description": "Customizable message from UNMUTE! Use: default to change later.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_MESSAGE": {
+            "description": "Customizable Block Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "UNBLOCK_MESSAGE": {
+            "description": "Customizable Unblock Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "WORK_TYPE": {
+            "description": "How to use the BOT. If you use public others can use the BOT, if you use private only you can use it",
+            "required": true,
+            "value": "private"
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Heroku APP Name.",
+            "required": true
+        },
+        "DEBUG": {
+            "description": "Exclusive for developers.",
+            "required": true,
+            "value": "false"
+        },
+        "REMOVE_BG_API_KEY": {
+            "description": "Put here your key obtained in https://remove.bg",
+            "required": false
+        },
+        "ALIVE_MESSAGE": {
+            "description": "Customizable Alive message! Use: default to change later.",
+            "required": false,
+            "value": "default"
+        },
+        "BAN_MESSAGE": {
+            "description": "Customizable BAN message! Use: default to change later.",
+            "required": false,
+            "value": "default"
+        },
+        "ADD_MESSAGE": {
+            "description": "Customizable Add Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "KICKME_MESSAGE": {
+            "description": "Customizable Autoexpulsion message! Use: default to change later.",
+            "required": false,
+            "value": "default"
+        },
+        "PROMOTE_MESSAGE": {
+            "description": "Customizable Promote message! Use: default to change later.",
+            "required": false,
+            "value": "default"
+        },
+        "DEMOTE_MESSAGE": {
+            "description": "Customizable Demote message! Use: default to change later.",
+            "required": false,
+            "value": "default"
+        },
+        "AFK_MESSAGE": {
+            "description": "Customizable message from AFK! Use: default to change later.",
+            "required": false,
+            "value": "default"
+        },
+        "GAN_IMAGE": {
+            "description": "Write image link for Gan Style plugin.",
+            "required": true,
+            "value": "https://telegra.ph/file/202d16289a94553959773.jpg"
+        },
+        "NO_ONLINE": {
+            "description": "Enter true if you don't want to appear online.",
+            "required": false,
+            "value": "true"
+        },
+        "COFFEEHOUSE_API_KEY": {
+            "description": "CoffeeHouse API Key. https://coffeehouse.intellivoid.net/",
+            "required": false,
+            "value": "true"
+        }
+    },
+    "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      }]
+  }
