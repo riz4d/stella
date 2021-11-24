@@ -1,4 +1,0 @@
-
-/*
-copyright @ rizadmuhammed
-*/
