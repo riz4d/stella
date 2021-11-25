@@ -23,7 +23,7 @@ async function rizadmohammed () {
     conn.on('open', () => {
         var st = Session.createStringSession(conn.base64EncodedAuthInfo());
         console.log(
-            chalk.green.bold('DrkBot String Code: '), Session.createStringSession(conn.base64EncodedAuthInfo())
+            chalk.green.bold('Stella String: '), Session.createStringSession(conn.base64EncodedAuthInfo())
         );
         
         if (!fs.existsSync('config.env')) {
