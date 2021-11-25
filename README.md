@@ -9,4 +9,12 @@ Under Construction...
   <p align="center">
 <a href="https://github.com/riz4d"><img title="Author/Dev" src="https://img.shields.io/badge/Author/Dev-rizad/stella?color=black&style=for-the-badge&logo=github"></a>
 </p>
-</p>
+  </div>
+  
+### What is Stella ?
+  Stella is a Whatsapp userbot operating with Whats Web API , developed by ![@riz4d](https://github.com/riz4d)
+  
+#### Is it paid?
+
+ No , Still Stella has an free source it doesn't ask you payments
+
