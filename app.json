@@ -1,7 +1,7 @@
 {
     "name": "Stella",
     "description": "Stella project - Makes it easy and fun to use Whatsapp..",
-    "logo": "https://raw.githubusercontent.com/riz4d/stella/rizad/media/gif/stellaherokujpg",
+    "logo": "https://github.com/riz4d/stella/raw/main/stella-req/stella.jpg",
     "keywords": ["whatsapp", "userbot", "ai"],
     "repository": "https://github.com/riz4d/stella",
     "website":   "https://rizad.ml",
@@ -141,7 +141,7 @@
         "GAN_IMAGE": {
             "description": "Write image link for Gan Style plugin.",
             "required": true,
-            "value": "https://telegra.ph/file/202d16289a94553959773.jpg"
+            "value": "https://github.com/riz4d/stella/raw/main/stella-req/stella.jpg"
         },
         "NO_ONLINE": {
             "description": "Enter true if you don't want to appear online.",
