@@ -7,7 +7,7 @@ Under Construction...
 <a><img title="STELLA" src="https://img.shields.io/badge/STELLA-rizad/stella?color=black&style=for-the-badge&logo=stella"></a>
 </p>
   <p align="center">
-<a href="https://github.com/riz4d"><img title="Author/Dev" src="https://img.shields.io/badge/Author/Dev-rizad/stella?color=black&style=for-the-badge&logo=github"></a>
+<a href="https://github.com/riz4d"><img title="Author/Dev" src="https://img.shields.io/badge/Author:rizad-rizad/stella?color=black&style=for-the-badge&logo=github"></a>
 </p>
   </div>
   
