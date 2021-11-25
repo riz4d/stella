@@ -1,4 +1,5 @@
 /* Copyright (C) 2021 Mohamed Rizad
+*/
 
 module.exports = {
     Base: require('./Base'),
