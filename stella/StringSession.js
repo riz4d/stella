@@ -23,7 +23,7 @@ class StringSession {
     }
 
     createStringSession(dict) {
-        return 'DrkBot;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
+        return 'rizad@connect;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
     }
 }
 
