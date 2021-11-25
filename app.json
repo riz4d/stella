@@ -2,7 +2,7 @@
     "name": "Stella",
     "description": "Stella project - Makes it easy and fun to use Whatsapp..",
     "logo": "https://raw.githubusercontent.com/riz4d/stella/rizad/media/gif/stellaherokujpg",
-    "keywords": ["whatsapp", "userbot", "DrkBox", "Asena", "WhatsAsena", "bot", "api", "ai"],
+    "keywords": ["whatsapp", "userbot", "ai"],
     "repository": "https://github.com/riz4d/stella",
     "website":   "https://rizad.ml",
     "success_url": "https://t.me/riz4d",
