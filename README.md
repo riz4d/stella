@@ -17,4 +17,15 @@ Under Construction...
 #### Is it paid?
 
  No , Still Stella has an free source it doesn't ask you payments
+#### WARNING
+Due to Userbot; Your WhatsApp account may be banned.
+you are responsible for everything you do. 
+Absolutely, Stella executives do not accept responsibility.
+By establishing the Stella, you are deemed to have accepted these responsibilities.
+
+Your account may be banned for the following reasons:
+- Using .ban command for more than one user.
+- Using fake numbers.
+- Spamming Too Much (If someone complains)
+
 
