@@ -1,5 +1,5 @@
 build:
   docker:
-      worker: /plugins/sql/Dockerfile
+      worker: /Stella/Dockerfile
 run:
    worker: npm start
