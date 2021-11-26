@@ -1,5 +1,4 @@
-
-const Rashi = require('../events');
+const Rizad = require('../events');
 const Heroku = require('heroku-client');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
@@ -26,7 +25,7 @@ var LANG = {
             limit: Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Güvenlik Sınırını Aşıyor!*\n*Zararlılık Yüzdesi:* _%' : '*This Plugin Exceeds Security Limit!*\n*Percentage of Harm:* _%',
             imside: Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Varolan Pluginleri Tekrar Yükleyemezsin!*' : '*You Cant Reinstall Existing Plugins!*'
 };
-Rashi.tozara({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN, dontAddCommandList: true}, (async (message, match) => {
+Rizad.tostella({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] == '') return await message.client.sendMessage(message.jid,Lang.NEED_URL + '.install https://gist.github.com/Raashii/test.js', MessageType.text)
     try {
@@ -44,7 +43,7 @@ Rashi.tozara({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, w
     if (response.statusCode == 200) {
         // Plugin Name
         var plugin_name = response.body.match(/addCommand\({.*pattern: ["'](.*)["'].*}/);
-        if (Config.ZARA_AI === 'true') {
+        if (Config.STELLA_AI === 'true') {
             plugin_name = "__" + plugin_name;
         } else {
             plugin_name = "__" + Math.random().toString(36).substring(8);
@@ -124,7 +123,7 @@ Rashi.tozara({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, w
     }
 }));
 
-Rashi.tozara({pattern: 'plugin$', fromMe: true, dontAddCommandList: true, desc: Lang.PLUGIN_DESC}, (async (message, match) => {
+Rizad.tostella({pattern: 'plugin$', fromMe: true, dontAddCommandList: true, desc: Lang.PLUGIN_DESC}, (async (message, match) => {
     var mesaj = Lang.INSTALLED_FROM_REMOTE;
     var plugins = await Db.PluginDB.findAll();
     if (plugins.length < 1) {
@@ -140,7 +139,7 @@ Rashi.tozara({pattern: 'plugin$', fromMe: true, dontAddCommandList: true, desc: 
     }
 }));
 
-Rashi.tozara({pattern: 'remove(?: |$)(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.REMOVE_DESC}, (async (message, match) => {
+Rizad.tostella({pattern: 'remove(?: |$)(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.REMOVE_DESC}, (async (message, match) => {
     if (match[1] === '') return await message.sendMessage(Lang.NEED_PLUGIN);
     if (!match[1].startsWith('__')) match[1] = '__' + match[1];
     try {
