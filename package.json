@@ -1,0 +1,31 @@
+{
+  "name": "Stella",
+  "version": "3.0.0",
+  "description": "stella whatsapp bot.",
+  "main": "./stella/bot.js",
+  "scripts": {
+    "start": "supervisor -s index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riz4d/stella.git"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "ai",
+    "stella",
+    "stellabot"
+  ],
+  "author": "StellaDev / rizad",
+  "developer": "rizad / @riz4d",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/riz4d/stella/issues"
+  },
+  "homepage": "https://github.com/riz4d/stella#readme",
+  "dependencies": {
+    "raganork-bot": "1.4.3",
+    "sharp": "0.29.2"
+  }
+}
