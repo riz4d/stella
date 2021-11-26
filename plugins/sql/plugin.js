@@ -1,4 +1,5 @@
 /* Copyright (C) 2021 Mohamed Rizad
+*/
 
 const config = require('../../config');
 const { DataTypes } = require('sequelize');
