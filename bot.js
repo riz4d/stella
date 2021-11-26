@@ -14,11 +14,10 @@ const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require(
 const {Message, StringSession, Image, Video} = require('./stella/');
 const { DataTypes } = require('sequelize');
 const { GreetingsDB, getMessage } = require("./plugins/sql/greetings");
-const HeartBot = require('drkbot-npm');
+const HeartBot = require('stella-npm');
 const got = require('got');
 const simpleGit = require('simple-git');
 const git = simpleGit();
-const crypto = require('crypto');
 const nw = '```Blacklist Defected!```'
 const heroku = new Heroku({
     token: config.HEROKU.API_KEY
