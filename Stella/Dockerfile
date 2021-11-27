@@ -4,8 +4,6 @@ RUN git clone https://github.com/riz4d/stella /root/stella
 
 WORKDIR /root/stella/
 
-RUN git clone https://github.com/riz4d/stella-media
-
 ENV TZ=Europe/Istanbul
 
 RUN npm install supervisor -g
