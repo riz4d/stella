@@ -27,7 +27,7 @@ var LANG = {
 };
 Rizad.tostella({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN, dontAddCommandList: true}, (async (message, match) => {
 
-    if (match[1] == '') return await message.client.sendMessage(message.jid,Lang.NEED_URL + '.install https://gist.github.com/Raashii/test.js', MessageType.text)
+    if (match[1] == '') return await message.client.sendMessage(message.jid,Lang.NEED_URL + '.install https://gist.github.com/riz4d/testt.js', MessageType.text)
     try {
         var url = new URL(match[1]);
     } catch {
