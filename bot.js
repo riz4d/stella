@@ -83,7 +83,7 @@ async function whatsAsena () {
     conn.version = [3, 3234, 9];
     const Session = new StringSession();
     conn.version = [2, 2140, 12]
-    conn.browserDescription = ['STELLA@rizad', 'Firefox', '90']
+    conn.browserDescription = ['rizad/stella', 'Firefox', '90']
 	
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
     var nodb;
@@ -219,7 +219,7 @@ if (msg.messageStubeType === 31 && config.FAKER === 'true') {
                 await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {thumbnail: fs.readFileSync('./media/image/bye.jpg'), caption:  gb.message.replace('{gp}', '').replace('{gphead}', rizadjson.subject).replace('{gpmaker}', rizadjson.owner).replace('{gpdesc}', rizadjson.desc).replace('{owner}', conn.user.name).replace('{time}', time).replace('{mention}', tag), contextInfo: {mentionedJid: [msg.messageStubParameters[0]]} }); });
              
    } else if (gb.message.includes('{gif}')) {
-                //created by afnanplk
+               
                 const tag = '@' + msg.messageStubParameters[0].split('@')[0]
                     var plkpinky = await axios.get(config.GIF_BYE, { responseType: 'arraybuffer' })
                     var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
