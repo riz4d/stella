@@ -12,7 +12,7 @@ Under Construction...
   </div>
   
 ### What is Stella ?
-  Stella is a Whatsapp userbot operating with Whats Web API , developed by ![@riz4d](https://github.com/riz4d)
+  Stella is a Whatsapp userbot operating with Whats Web API , developed by [@riz4d](https://github.com/riz4d)
   
 #### Is it paid?
 
