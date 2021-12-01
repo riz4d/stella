@@ -17,7 +17,7 @@ module.exports = {
  THERI_BLOCK: process.env.THERI_BLOCK === undefined ? 'false' : process.env.THERI_BLOCK,
  LOGO: process.env.LOGO_LINK === undefined ? 'https://github.com/riz4d/stella/blob/main/stella-req/stella.jpg' : process.env.LOGO_LINK,
  PLKAFN: process.env.THERI_LIST_PM === undefined ? false : process.env.THERI_LIST_PM,
- PHONE: process.env.NUMBER === undefined ? '+994 40 350 13 40' : process.env.NUMBER,   
+ PHONE: process.env.NUMBER === undefined ? '+918301824373' : process.env.NUMBER,   
     
 
 };
