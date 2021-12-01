@@ -183,7 +183,7 @@ Rizad.tostella({on: 'text', fromMe: false}, (async (message, match) => {
     if (!!message.mention && message.mention[0] == '15862077024@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/stickers/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
-const array = ['stella','Bye','bye','Poli','Dance','Gd mrng','Ara','Poyi','myr','poda','podi','Pain','girl','asena','ayin','back','Back','Bot','fuck','Fuck','Hehe','Hello','Hlo','Kill','kill','kiss','line','love','mwolu','Mwolu','single','tha','thund','z','Z','bie','Bie','velachil','bgm','comedy','ijetha','kozhi','mess','oombi','oomfi','ozhivaake','pewer','sed','sad','scene','serious','subscribe']
+const array = ['stellla']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
