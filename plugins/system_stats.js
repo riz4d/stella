@@ -53,4 +53,12 @@ else if (Config.WORKTYPE == 'public') {
             '```' + child + '```', MessageType.text
         );
     }));
+
+    Rizad.tostella({pattern: 'owner', fromMe: false}, (async (message, match) => {
+        await message.sendMessage({displayname: "Rizad", vcard: vCard}, MessageType.contact);
+    }));
+
+    Rizad.tostella({pattern: 'owner', fromMe: true}, (async (message, match) => {
+        await message.sendMessage({displayname: "Rizad", vcard: vCard}, MessageType.contact);
+    }));
 }
