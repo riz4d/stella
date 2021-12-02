@@ -1076,11 +1076,11 @@ else if (config.WORKTYPE == 'public') {
 
 Rizad.tostella({pattern: 'play ?(.*)', fromMe: false, desc: Lang.ISONG_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_PLAY,MessageType.text);    
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_PLAY,MessageType.text);
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -1102,8 +1102,7 @@ Rizad.tostella({pattern: 'play ?(.*)', fromMe: false, desc: Lang.ISONG_DESC}, (a
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text,{quoted: message.data});
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {filename: 'stella@rizad' + '.mp3', mimetype: Mimetype.mp4Audio,quoted: message.data,  ptt: true});
+                reply = await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {filename: 'stella@rizad' + '.mp3', mimetype: Mimetype.mp4Audio,quoted: message.data,  ptt: true});
             });
     }));
 
