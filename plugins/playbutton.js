@@ -7,7 +7,7 @@ const need = "type some word after command\n"
 
 if (Config.WORKTYPE == 'private') {
 
-  Rizad.tostella({ pattern: 'playbutton ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Rizad.tostella({ pattern: 'ytbutton ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -20,7 +20,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-  Rizad.tostella({ pattern: 'playbutton ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Rizad.tostella({ pattern: 'ytbutton ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD);
 
