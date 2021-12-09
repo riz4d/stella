@@ -22,7 +22,7 @@ await message.client.sendMessage(message.jid, {displayname: "Owner", vcard: Riiz
 
 else if (config.WORKTYPE == 'public') {
 
-Rizad.tostella({pattern: 'number', fromMe: false, desc: 'Its send owner number'}, (async (message, match) => {
+Rizad.tostella({pattern: 'rizad', fromMe: false, desc: 'Its send owner number'}, (async (message, match) => {
          var mode = ''
 if (config.PLK == 'Riizad') mode = 'ᴅᴇᴠᴇʟᴏᴘᴇʀ : '
 
@@ -31,7 +31,7 @@ else mode = 'ᴏᴡɴᴇʀ : '
             const Riizad = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:' + config.PLK + '\n' 
-            + 'ORG:tella Bot;\n' 
+            + 'ORG:Stella;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=' + Config.PHONE + ':' + Config.PHONE + ' \n'
             + 'END:VCARD'
 await message.client.sendMessage(message.jid, {displayname: "Owner", vcard: Riizad}, MessageType.contact);
