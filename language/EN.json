@@ -2,7 +2,7 @@
     "__ASENAJSON__": true,
     "LANGUAGE": "English",
     "LANGCODE": "en",
-    "AUTHOR": "AsenaDev",
+    "AUTHOR": "Rizad",
     "STRINGS": {
         "_asena": {
             "COMMAND": "Command",
@@ -500,7 +500,7 @@
         },
               "weather": {
             "WEATHER_DESC": "Shows the weather.",
-            "NEED_LOCATION": "* Please write a location!*\n*Example:* ```.weather kozhikode```",
+            "NEED_LOCATION": "* Please write a location!*\n*Example:* ```.weather malappuram```",
             "LOCATION": "Location",
             "LAT": "Lattitude",
             "LONG": "Longitude",
@@ -521,7 +521,7 @@
             "MODINFO": "ModInfo",
             "DOWNLOAD": "Download",
             "SIZE": "Size:",
-            "MODD_DESC": "Get modded app details from MODDROID.",
+            "MODD_DESC": "Get modded app details from goldmodz.",
             "HMODD_DESC": "Get modded app details from HappyMod.",
             "NEED_APPNAME": "*Invalid Request,Provide an app name*",
             "NOT_FOUNDMD": "```Sorry,I could not find such an app.\n Try using .happymod if .modd is not working 😖```",
