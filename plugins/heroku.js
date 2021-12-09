@@ -1,7 +1,6 @@
 const Rizad = require('../events');
 const Config = require('../config');
 const Heroku = require('heroku-client');
-const {secondsToHms} = require('./afk');
 const got = require('got');
 const {MessageType} = require('@adiwajshing/baileys');
 const sql = require('./sql/greetings');
