@@ -3,7 +3,6 @@ const { MessageType, Mimetype, GroupSettingChange } = require('@adiwajshing/bail
 const { errorMessage, infoMessage } = require('../helpers')
 const axios = require('axios')
 const Config = require('../config');
-const dbot = require('dbot-api');
 const got = require('got');
 const fs = require('fs');
 
