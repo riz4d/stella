@@ -1,7 +1,7 @@
 const Rizad = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 
-Rizad.tostella({pattern: 'stella', fromMe: true}, (async (message, match) => {
+Rizad.tostella({pattern: 'stella', fromMe: false}, (async (message, match) => {
     
     var r_text = new Array ();
 r_text [0] = "*You are not what I searched for. You fell in love while I was out of my mind.*";
