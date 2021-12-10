@@ -24,7 +24,7 @@ Rizad.tostella({pattern: 'qrc ?(.*)', fromMe: true, desc: Lang.QR_DESC}, (async 
 }
 if (Config.WORKTYPE == 'public') {
 
-Asena.addCommand({pattern: 'qrc ?(.*)', fromMe: false, desc: Lang.QR_DESC}, (async (message, match) => {
+Rizad.tostella({pattern: 'qrc ?(.*)', fromMe: false, desc: Lang.QR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(Lang.TEXT);
 
