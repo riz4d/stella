@@ -2,7 +2,7 @@
   "name": "Stella",
   "version": "2.5.0",
   "description": "Stella whatsapp bot provides a bunch of features to your whatsapp account.",
-  "main": "./bot-setting/bot.js",
+  "main": "./stella/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
@@ -15,7 +15,7 @@
     "bgm",
     "Bot"
   ],
-  "author": "AsenaDev / Yusuf Usta",
+  "author": "StellaDev / rizad",
   "developer": "rizad / @riz4d",
   "license": "GPL-3.0-or-later",
   "bugs": {
